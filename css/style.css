@@ -139,6 +139,10 @@ picture {
   color: hsl(var(--clr-600));
 }
 
+.text-clr-wht {
+  color: hsl(var(--clr-white));
+}
+
 /* Typography */
 
 .ff-sans-serf {
@@ -183,6 +187,8 @@ picture {
 
 .container {
   padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 1100px;
 }
 
 /* ------------------------------ */
@@ -287,6 +293,64 @@ picture {
   display: block;
 }
 
+/* Cards */
+
+.projects-card {
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 1rem;
+  box-shadow: hsla(var(--clr-600) / 0.6) 0 8px 16px 0px;
+}
+.projects-card--image {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-card--image img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: hsla(var(--clr-600) / 0.6) 0 -8px 16px 0px;
+}
+
+.projects-card--title {
+  margin-top: 0.6rem;
+}
+
+.projects-card--description {
+  line-height: 2rem;
+  letter-spacing: 2.2;
+}
+
+.projects-card--footer {
+  margin-top: 0.6rem;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.projects-card--links i {
+  text-decoration: none;
+  color: hsl(var(--clr-white));
+  transition: color .5s ease;
+}
+
+.projects-card--links a i:hover {
+  color: hsl(var(--clr-500));
+}
+
+@media (min-width: 45rem) {
+  .projects-card {
+    max-width: 30rem;
+  }
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  padding-block: 0.5rem;
+}
+
 /* ------------------------------ */
 /* Sections                       */
 /* ------------------------------ */
@@ -301,22 +365,22 @@ picture {
     "content";
 }
 
-.about-me--title {
+.about-me-title {
   grid-area: title;
 }
 
-.about-me--text {
+.about-me-text {
   line-height: 2rem;
   letter-spacing: 2.2;
   grid-area: content;
 }
 
-.about-me--picture {
+.about-me-picture {
   grid-area: image;
   margin-block: 1rem;
 }
 
-.about-me--img {
+.about-me-img {
   border-radius: 50%;
   width: 20rem;
   aspect-ratio: 1;
@@ -326,16 +390,45 @@ picture {
   .about-me {
     grid-template-columns: minmax(2rem, 1fr) minmax(0, 40rem) minmax(0, 40rem) minmax(2rem, 1fr);
     grid-template-areas:
-      ". title title ."
+      "title title title ."
       ". content image .";
     align-items: center;
   }
 
-  .about-me--title {
+  .about-me-title {
     justify-self: start;
   }
 
-  .about-me--picture {
+  .about-me-picture {
     justify-self: end;
+  }
+}
+
+/* Projects */
+
+.projects {
+  margin-top: 2rem;
+}
+
+.projects-container {
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects-title {
+  margin-inline: auto;
+  text-align: center;
+}
+
+@media (min-width: 45rem) {
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects-title {
+    text-align: left;
   }
 }

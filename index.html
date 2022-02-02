@@ -10,17 +10,18 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="container flex primary-header bg-500">
-            <div class="logo"><a href="/" class="fs-600 uppercase">PD Portfolio</a></div>
-            <button class="mobile-nav-toggle" data-open="false" aria-expanded="false" aria-controls="primary-navigation"></button>
-            <nav>
-                <ul class="flex primary-navigation" id="primary-navigation" data-visible="false">
-                    <li><a href="#about-me" class="fs-500 fw-700">About Me</a></li>
-                    <li><a href="#projects" class="fs-500 fw-700">Projects</a></li>
-                    <li><a href="#technologies" class="fs-500 fw-700">Technologies</a></li>
-                    <li><a href="/contact.html" class="fs-500 fw-700">Contact</a></li>
-                </ul>
-            </nav>
+        <header class="bg-500">
+            <div class="container flex primary-header">
+                <div class="logo"><a href="/" class="fs-600 uppercase">PD Portfolio</a></div>
+                <button class="mobile-nav-toggle" data-open="false" aria-expanded="false" aria-controls="primary-navigation"></button>
+                <nav>
+                    <ul class="flex primary-navigation" id="primary-navigation" data-visible="false">
+                        <li><a href="#about-me" class="fs-500 fw-700">About Me</a></li>
+                        <li><a href="#projects" class="fs-500 fw-700">Projects</a></li>
+                        <li><a href="#contact" class="fs-500 fw-700">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <section id="hero" class="hero">
@@ -28,21 +29,63 @@
             </section>
         
             <section id="about-me" class="container grid about-me">
-                <h2 class="about-me--title fs-600 text-clr-600 uppercase">About Me</h2>
-                <article class="about-me--text text-clr-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium cum corrupti, nesciunt tempora aspernatur voluptate officiis neque qui magni! Culpa pariatur porro minima nihil at expedita dolore! Minus dolores tenetur quis quo esse autem distinctio porro facilis maxime, laborum, voluptatem nihil. Nam aperiam est corrupti ullam. Error ratione cumque iste illum labore. Ipsa ex rerum at ullam illo cupiditate vero animi beatae odit. Expedita error placeat molestias minima culpa sed amet officiis sunt quae necessitatibus! Voluptate laborum accusantium provident cupiditate delectus. Dolorum similique ex at voluptatibus eveniet quam cumque optio nihil ipsa voluptatum laboriosam earum soluta, nemo fugiat tempora.</article>
-                <picture class="about-me--picture"><img src="img/about-me-photo.jpg" class="about-me--img" alt="Petar Dobrev"></picture>
+                <h2 class="about-me-title fs-600 text-clr-600 uppercase">About Me</h2>
+                <article class="about-me-text text-clr-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium cum corrupti, nesciunt tempora aspernatur voluptate officiis neque qui magni! Culpa pariatur porro minima nihil at expedita dolore! Minus dolores tenetur quis quo esse autem distinctio porro facilis maxime, laborum, voluptatem nihil. Nam aperiam est corrupti ullam. Error ratione cumque iste illum labore. Ipsa ex rerum at ullam illo cupiditate vero animi beatae odit. Expedita error placeat molestias minima culpa sed amet officiis sunt quae necessitatibus! Voluptate laborum accusantium provident cupiditate delectus. Dolorum similique ex at voluptatibus eveniet quam cumque optio nihil ipsa voluptatum laboriosam earum soluta, nemo fugiat tempora.</article>
+                <picture class="about-me-picture"><img src="img/about-me-photo.jpg" class="about-me-img" alt="Petar Dobrev"></picture>
             </section>
-            <section id="projects" class="container">
-                <h2>Projects</h2>
-                <div class="projects--container">
-                    <article class="projects--card">
+            <section id="projects" class="container projects">
+                <h2 class="projects-title fs-600 text-clr-600 uppercase">Projects</h2>
+                <div class="projects-container flex">
+                    <article class="projects-card flex bg-400">
+                        <div class="projects-card--image"><img src="img/project-lotto-image.jpg" alt="lotto balls"></div>
+                        <div class="projects-card--content">
+                            <h3 class="projects-card--title fs-600 text-clr-wht uppercase">Toto Generator</h3>
+                            <p class="projects-card--description text-clr-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur cumque,   dolor sit amet consectetur adipisicing elit. Officiis consequatur cumque,soluta quaerat minima aliquam aspernatur! Nulla qui eos amet?</p>
+                        </div>
+                        <footer class="projects-card--footer flex">
+                            <div class="projects-card--technologies text-clr-wht fs-800"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i></div>
+                            <div class="projects-card--links  fs-800"><a href=""><i class="fab fa-github"></i></a> <a href=""><i class="fas fa-link"></i></a></div>
+                        </footer>
+                    </article>
+                    <article class="projects-card flex bg-400">
+                        <div class="projects-card--image"><img src="img/project-lotto-image.jpg" alt="lotto balls"></div>
+                        <div class="projects-card--content">
+                            <h3 class="projects-card--title fs-600 text-clr-wht uppercase">Toto Generator</h3>
+                            <p class="projects-card--description text-clr-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequaturcumque,   dolor sit amet consectetur adipisicing elit. Officiis consequatur cumque,soluta quaerat minima aliquam aspernatur! Nulla qui eos amet?</p>
+                        </div>
+                        <footer class="projects-card--footer flex">
+                            <div class="projects-card--technologies text-clr-wht fs-800"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i></div>
+                            <div class="projects-card--links  fs-800"><a href=""><i class="fab fa-github"></i></a></div>
+                        </footer>
+                    </article>
+                    <article class="projects-card flex bg-400">
+                        <div class="projects-card--image"><img src="img/project-lotto-image.jpg" alt="lotto balls"></div>
+                        <div class="projects-card--content">
+                            <h3 class="projects-card--title fs-600 text-clr-wht uppercase">Toto Generator</h3>
+                            <p class="projects-card--description text-clr-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur cumque,   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequaturLorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequaturdolor sit amet consectetur adipisicing elit. Officiis consequatur cumque,soluta quaerat minima aliquam aspernatur! Nulla qui eos amet?</p>
+                        </div>
+                        <footer class="projects-card--footer flex">
+                            <div class="projects-card--technologies text-clr-wht fs-800"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i></div>
+                            <div class="projects-card--links  fs-800"><a href=""><i class="fab fa-github"></i></a></div>
+                        </footer>
+                    </article>
+                    <article class="projects-card flex bg-400">
+                        <div class="projects-card--image"><img src="img/project-lotto-image.jpg" alt="lotto balls"></div>
+                        <div class="projects-card--content">
+                            <h3 class="projects-card--title fs-600 text-clr-wht uppercase">Toto Generator</h3>
+                            <p class="projects-card--description text-clr-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur cumque,   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequaturLorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequaturdolor sit amet consectetur adipisicing elit. Officiis consequatur cumque,soluta quaerat minima aliquam aspernatur! Nulla qui eos amet?</p>
+                        </div>
+                        <footer class="projects-card--footer flex">
+                            <div class="projects-card--technologies text-clr-wht fs-800"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i></div>
+                            <div class="projects-card--links  fs-800"><a href=""><i class="fab fa-github"></i></a></div>
+                        </footer>
                     </article>
                 </div>
             </section>
-            <section id="technologies" class="contianer">
+            <section id="contact" class="contianer">
             </section>
-            <footer>
-                <p class="footer--text">Made with ❤️ & 🍷| Twenty Twenty Too</p>
+            <footer class="footer bg-600 text-clr-300">
+                <p class="footer-text">Made with ❤️ & 🍷| Twenty Twenty Too</p>
             </footer>
         </main>
     </div>
