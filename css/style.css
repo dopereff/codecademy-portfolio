@@ -17,7 +17,7 @@
   --clr-white: 0 0% 100%;
 
   /* Font Sizes */
-  --fs-900: 6.25rem;
+  --fs-900: 3.5rem;
   --fs-800: 3.5rem;
   --fs-700: 2rem;
   --fs-600: 1.75rem;
@@ -27,6 +27,12 @@
 
   /* Font Families */
   --ff-sans-serif: "Ubuntu", serif;
+}
+
+@media (min-width: 45rem) {
+  :root {
+    --fs-900: 6.25rem;
+  }
 }
 
 /* ------------------------------ */
@@ -330,11 +336,11 @@ picture {
 .projects-card--links i {
   text-decoration: none;
   color: hsl(var(--clr-white));
-  transition: color .5s ease;
+  transition: color 0.5s ease;
 }
 
 .projects-card--links a i:hover {
-  color: hsl(var(--clr-500));
+  color: hsl(var(--clr-600));
 }
 
 @media (min-width: 45rem) {
@@ -397,6 +403,7 @@ picture {
 
   .about-me-title {
     justify-self: start;
+    margin-bottom: 2rem;
   }
 
   .about-me-picture {
@@ -430,5 +437,34 @@ picture {
 
   .projects-title {
     text-align: left;
+  }
+}
+
+/* Contact */
+
+.contact {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contact-icons-container {
+  justify-content: center;
+}
+
+.contact-icons-container i {
+  transition: color 0.5s ease;
+  margin: 1rem;
+}
+
+.contact-icons-container i:hover {
+  color: hsl(var(--clr-600));
+}
+
+@media (min-width: 45rem) {
+  .contact-title {
+    text-align: left;
+  }
+  .contact-icons-container {
+    justify-content: start;
   }
 }
