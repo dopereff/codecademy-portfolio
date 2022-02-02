@@ -310,12 +310,16 @@ picture {
 .projects-card--image {
   display: flex;
   justify-content: center;
+  height: 20rem;
+  max-width: 30rem;
 }
 
 .projects-card--image img {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   box-shadow: hsla(var(--clr-600) / 0.6) 0 -8px 16px 0px;
+  height: 100%;
+  width: 100%;
 }
 
 .projects-card--title {
